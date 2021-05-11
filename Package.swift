@@ -11,9 +11,5 @@ let package = Package(
         .target(
             name: "MailchimpSDK",
             exclude: ["MailchimpSDK/Info.plist"]),
-        .testTarget(
-            name: "MailchimpSDKTests",
-            dependencies: ["MailchimpSDK"],
-            exclude: ["../../Tests/MailchimpSDKTests/Info.plist"]),
     ]
 )
