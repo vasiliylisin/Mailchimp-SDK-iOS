@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MailchimpSDK'
-  s.version          = '2.0.3'
+  s.version          = '2.0.31'
   s.summary          = 'Mailchimp SDK for iOS'
 
   s.description      = <<-DESC
@@ -23,8 +23,7 @@ Pod::Spec.new do |s|
 
   s.platform         = :ios, '10.0'
 
-  s.source           = { :git => 'https://github.com/mailchimp/Mailchimp-SDK-iOS.git', :tag => 'v' + s.version.to_s }
-  s.source_files     = 'Sources/MailchimpSDK/MailchimpSDK/*.{swift,h,m}'
+  s.source           = { :git => 'https://github.com/mailchimp/Mailchimp-SDK-iOS.git', :tag => s.version.to_s }
+  s.source_files     = 'Sources/**/*.swift'
 
-  s.vendored_frameworks = 'build/MailchimpSDK.xcframework'
 end
